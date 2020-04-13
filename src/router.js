@@ -26,10 +26,10 @@ const component = {
 }
 
 export const basicRoutes = [
-  // {
-  //   path:'/index.html',
-  //   redirect:'/dashboard'
-  // },
+  {
+    path:'/index.html',
+    redirect:'/dashboard'
+  },
    
   {
     name: 'dashboard',
