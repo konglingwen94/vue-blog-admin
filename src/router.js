@@ -26,6 +26,10 @@ const component = {
 }
 
 export const basicRoutes = [
+  // {
+  //   path:'/index.html',
+  //   redirect:'/dashboard'
+  // },
    
   {
     name: 'dashboard',
@@ -210,6 +214,8 @@ const router = new Router({
 })
 
 router.beforeEach((to, from, next) => {
+  console.log('from.path',from.path)
+  console.log('to.path',to.path)
   if (to.path === '/auth/login') {
     return next()
   }
