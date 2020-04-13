@@ -3,7 +3,8 @@ import { Loading, } from 'element-ui'
 import router from '@/router.js'
 
 let loading
- 
+
+console.log('baseURL', process.env.NODE_ENV !== 'production' ? '/api' : '/vue-blog-admin/public/data')
 const instance = axios.create({
   baseURL: process.env.NODE_ENV !== 'production' ? '/api' : '/vue-blog-admin/public/data',
   validateStatus(status) {
