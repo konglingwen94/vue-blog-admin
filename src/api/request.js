@@ -27,6 +27,9 @@ instance.interceptors.request.use(
         config.headers['Authorization'] = token
       }
     }
+console.log(config)  
+config.url+='.json'
+
 
     loading = Loading.service()
     return Promise.resolve(config)
