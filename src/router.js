@@ -27,10 +27,12 @@ const component = {
 
 export const basicRoutes = [
   {
-    path:'/index.html',
-    redirect:'/dashboard'
+    path: '/index.html',
+    redirect: '/dashboard',
+    notMenu: true,
+
   },
-   
+
   {
     name: 'dashboard',
     path: 'dashboard',
@@ -80,7 +82,7 @@ export const basicRoutes = [
     ],
   },
 
-  
+
   {
     name: 'article',
     path: 'articles',
@@ -123,7 +125,7 @@ export const basicRoutes = [
         path: ':articleID/comments',
         component: Comment,
         meta: {
-          notMenu:true,
+          notMenu: true,
           title: '文章评论',
           icon: 'el-icon-s-comment',
         },
@@ -145,7 +147,7 @@ export const basicRoutes = [
     component: Tag,
     meta: {
       title: '标签管理',
-      icon:'el-icon-collection-tag'
+      icon: 'el-icon-collection-tag'
     },
   },
   {
@@ -154,7 +156,7 @@ export const basicRoutes = [
     component: Comment,
     meta: {
       title: '文章评论',
-      icon:'el-icon-s-comment'
+      icon: 'el-icon-s-comment'
     },
   },
   {
@@ -165,7 +167,7 @@ export const basicRoutes = [
       title: '留言墙',
       icon: 'el-icon-message',
     },
-  },{
+  }, {
     name: 'security',
     path: 'settings/security',
     component: Security,
@@ -174,7 +176,7 @@ export const basicRoutes = [
       icon: 'el-icon-setting',
     },
   },
-  
+
 ]
 
 Vue.use(Router)
@@ -214,8 +216,8 @@ const router = new Router({
 })
 
 router.beforeEach((to, from, next) => {
-  console.log('from.path',from.path)
-  console.log('to.path',to.path)
+  console.log('from.path', from.path)
+  console.log('to.path', to.path)
   if (to.path === '/auth/login') {
     return next()
   }
