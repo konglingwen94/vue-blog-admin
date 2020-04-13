@@ -29,7 +29,7 @@ export const basicRoutes = [
   {
     path: '/index.html',
     redirect: '/dashboard',
-    notMenu: true,
+    meta: { notMenu: true, }
 
   },
 
