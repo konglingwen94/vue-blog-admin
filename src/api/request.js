@@ -6,7 +6,7 @@ let loading
 
 console.log('baseURL', process.env.NODE_ENV !== 'production' ? '/api' : '/vue-blog-admin/public/data')
 const instance = axios.create({
-  baseURL: process.env.NODE_ENV !== 'production' ? '/api' : '/vue-blog-admin/public/data',
+  baseURL: process.env.NODE_ENV !== 'production' ? '/api' : './data',
   validateStatus(status) {
     return status < 500
   }
