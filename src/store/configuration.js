@@ -33,16 +33,14 @@ export default {
     },
   },
   actions: {
-    // fetchConfiguration({dispatch}){
-    //   dispatch('configuration/fetchSiteConfig')
-    // },
+
 
     initData({ commit }) {
       ConfigurationApi.fetchAllConfigurations().then(response => {
         response.forEach(item => {
           commit(mapKindToMutationTypes[item.kind], item)
         })
-      })
+      }).catch(console.error)
     },
     updateSiteConfig({ commit, state }, payload) {
       return ConfigurationApi.updateSiteConfig(state.siteConfig.id, payload)
@@ -65,6 +63,6 @@ export default {
         })
         .catch(error => Promise.reject(error))
     },
- 
+
   },
 }

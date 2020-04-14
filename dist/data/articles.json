@@ -8,9 +8,11 @@
         "starCount": 11,
         "pv": 33,
         "commentCount": 33,
-        "tag": {
-            "name": "Vue"
-        },
+        "tagList": [
+            {
+                "name": "Vue"
+            }
+        ],
         "category": {
             "name": "WebFrontend"
         }
