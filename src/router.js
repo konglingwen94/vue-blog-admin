@@ -28,7 +28,7 @@ const component = {
 export const basicRoutes = [
   {
     path: '/index.html',
-    redirect: '/dashboard',
+    redirect: '/auth/login',
     meta: { notMenu: true, }
 
   },
