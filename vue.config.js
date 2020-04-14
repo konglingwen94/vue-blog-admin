@@ -1,6 +1,6 @@
 module.exports = {
-  publicPath: process.env.NODE_ENV!=='production'?'':'/vue-blog-admin/dist/',
-  // outputDir: './public/dist',
+  publicPath: process.env.NODE_ENV !== 'production' ? '/' : '/vue-blog-admin/dist/',
+   
   devServer: {
 
     proxy: {
@@ -8,7 +8,8 @@ module.exports = {
 
         target: 'http://localhost:8080',
         pathRewrite(path, req) {
-          console.log(path.replace('/api', '/data') + '.json')
+
+           
           return path.replace('/api', '/data') + '.json'
 
         },

@@ -183,7 +183,7 @@ const router = new Router({
     {
       path: '/index.html',
       redirect: '/auth/login',
-      meta: { notMenu: true, }
+       
 
     },
     {
@@ -217,8 +217,7 @@ const router = new Router({
 })
 
 router.beforeEach((to, from, next) => {
-  console.log('from.path', from.path)
-  console.log('to.path', to.path)
+   
   if (to.path === '/auth/login') {
     return next()
   }
