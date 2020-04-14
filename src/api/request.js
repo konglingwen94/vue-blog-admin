@@ -27,8 +27,12 @@ instance.interceptors.request.use(
         config.headers['Authorization'] = token
       }
     }
-console.log(config)  
-config.url+='.json'
+    
+    if(process.env.NODE_ENV==='production'){
+      
+      config.url+='.json'
+      console.log(config)  
+}
 
 
     loading = Loading.service()

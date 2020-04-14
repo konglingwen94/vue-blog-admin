@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:local":"vue-cli-service build --mode=local",
     "debug":"node --inspect ./node_modules/@vue/cli-service/bin/vue-cli-service.js serve "
   },
   "dependencies": {
