@@ -27,7 +27,7 @@ const component = {
 
 export const basicRoutes = [
   {
-    path: '/index.html',
+    path: '*/index.html',
     redirect: '/dashboard',
     meta: { notMenu: true, }
 
