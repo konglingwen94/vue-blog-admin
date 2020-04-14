@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: '/vue-blog-admin/',
+  publicPath: '/vue-blog-admin/dist/',
   // outputDir: './public/dist',
   devServer: {
 
