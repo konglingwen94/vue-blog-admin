@@ -23,6 +23,13 @@ npm run build
 
 ## Screenshots
 
+![vue-blog-admin](./screenshots/1.png)
+![vue-blog-admin](./screenshots/2.png)
+![vue-blog-admin](./screenshots/3.png)
+![vue-blog-admin](./screenshots/4.png)
+![vue-blog-admin](./screenshots/5.png)
+![vue-blog-admin](./screenshots/6.png)
+
 
  
 
