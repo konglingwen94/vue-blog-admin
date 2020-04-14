@@ -1,4 +1,7 @@
-[{
-    "content":"content",
-    "createdAt":"2020-1-3"
-}]
+[
+    {
+        "content": "content",
+        "nickname": "nickname",
+        "createdAt": "2020-1-3"
+    }
+]
