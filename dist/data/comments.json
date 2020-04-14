@@ -1,7 +1,10 @@
 [
     {
         "content": "content",
-        "nickname": "nickname",
-        "createdAt": "2020-1-3"
+        "title": "title",
+        "createdAt": "2020-1-3",
+        "isPublished": true,
+        "id": "id",
+        "starCount": 23
     }
 ]
