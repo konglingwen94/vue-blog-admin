@@ -26,12 +26,7 @@ const component = {
 }
 
 export const basicRoutes = [
-  {
-    path: 'index.html',
-    redirect: '/auth/login',
-    meta: { notMenu: true, }
 
-  },
 
   {
     name: 'dashboard',
@@ -185,6 +180,12 @@ const router = new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
+    {
+      path: '/index.html',
+      redirect: '/auth/login',
+      meta: { notMenu: true, }
+
+    },
     {
       path: '/auth',
       component: UserLayout,
