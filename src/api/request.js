@@ -6,7 +6,7 @@ let loading
 
 
 const instance = axios.create({
-  baseURL: process.env.NODE_ENV !== 'production' ? '/api' : process.env.BASE_URL,
+  baseURL: process.env.NODE_ENV !== 'production' ? '/api' : process.env.BASE_URL + 'data',
   validateStatus(status) {
     // validateStatus defines whether to resolve or reject the promise for a given. 
     // HTTP response status code. If validateStatus returns `true` (or is set to `null` or `undefined`), the promise will be resolved; otherwise, the promise will be rejected.
@@ -32,8 +32,9 @@ instance.interceptors.request.use(
     }
 
     if (process.env.NODE_ENV === 'production') {
-
+      // config.url=config.url.replace('/api')
       config.url += '.json'
+      // config.url=config.url+
       // console.log(config)
     }
 
