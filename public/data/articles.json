@@ -4,6 +4,10 @@
         "cover": {
             "path": "path"
         },
-        "createdAt": "2020-1-22"
+        "createdAt": "2020-1-22",
+        "starCount":11,
+        "pv":33,
+        "commentCount":33
+
     }
 ]
