@@ -4,10 +4,13 @@ import router from '@/router.js'
 
 let loading
 
-console.log('baseURL', process.env.NODE_ENV !== 'production' ? '/api' : '/vue-blog-admin/public/data')
+
 const instance = axios.create({
-  baseURL: process.env.NODE_ENV !== 'production' ? '/api' : './data',
+  baseURL: process.env.NODE_ENV !== 'production' ? '/api' : process.env.BASE_URL,
   validateStatus(status) {
+    // validateStatus defines whether to resolve or reject the promise for a given. 
+    // HTTP response status code. If validateStatus returns `true` (or is set to `null` or `undefined`), the promise will be resolved; otherwise, the promise will be rejected.
+
     return status < 500
   }
 })
@@ -27,12 +30,12 @@ instance.interceptors.request.use(
         config.headers['Authorization'] = token
       }
     }
-    
-    if(process.env.NODE_ENV==='production'){
-      
-      config.url+='.json'
-      console.log(config)  
-}
+
+    if (process.env.NODE_ENV === 'production') {
+
+      config.url += '.json'
+      // console.log(config)
+    }
 
 
     loading = Loading.service()

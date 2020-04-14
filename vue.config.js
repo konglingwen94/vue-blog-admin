@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: '/vue-blog-admin/dist/',
+  publicPath: process.env.NODE_ENV!=='production'?'':'/vue-blog-admin/dist/',
   // outputDir: './public/dist',
   devServer: {
 

@@ -1,4 +1,10 @@
-# admin
+# vue-blog-admin
+A beautiful back management system based on Vue
+
+## Online 
+
+[线上地址](https://konglingwen94.github.io/vue-blog-admin/dist/index.html)
+
 
 ## Project setup
 ```
@@ -7,7 +13,7 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm run dev
 ```
 
 ### Compiles and minifies for production
@@ -15,15 +21,9 @@ npm run serve
 npm run build
 ```
 
-### Run your tests
-```
-npm run test
-```
+## Screenshots
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+ 
+
+ 
