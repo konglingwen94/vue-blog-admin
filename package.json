@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "deploy":"npm run build && git add . && git commit -m \"Deploy\" && git push origin master",
-    "debug":"node --inspect ./node_modules/@vue/cli-service/bin/vue-cli-service.js serve "
+    "build:gh-pages": "cross-env NODE_ENV=gh-pages vue-cli-service build",
+    "debug": "node --inspect ./node_modules/@vue/cli-service/bin/vue-cli-service.js serve "
   },
   "dependencies": {
     "axios": "latest",
@@ -21,6 +21,7 @@
     "@vue/cli-plugin-babel": "^3.11.0",
     "@vue/cli-service": "^3.11.0",
     "babel-plugin-component": "^1.1.1",
+    "cross-env": "^7.0.2",
     "less": "latest",
     "less-loader": "latest",
     "vue-template-compiler": "latest"
