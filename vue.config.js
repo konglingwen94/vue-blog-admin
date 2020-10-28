@@ -1,6 +1,6 @@
+
 module.exports = {
-  // publicPath: process.env.NODE_ENV !== 'production' ? '/' : '/vue-blog-admin/dist/',
-  publicPath: process.env.NODE_ENV === "gh-pages" ? "/vue-blog-admin/" : "./",
+  publicPath: process.env.DEPLOY_PUBLICPATH === "gh-pages" ? "/vue-blog-admin/" : "./",
 
   devServer: {
     proxy: {

@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build:gh-pages": "cross-env NODE_ENV=gh-pages vue-cli-service build",
+    "build:gh-pages": "cross-env DEPLOY_PUBLICPATH=gh-pages  vue-cli-service build",
     "debug": "node --inspect ./node_modules/@vue/cli-service/bin/vue-cli-service.js serve "
   },
   "dependencies": {
