@@ -3,7 +3,7 @@ A beautiful back management system based on Vue
 
 ## Online preview
 
-[线上地址](https://konglingwen94.github.io/vue-blog-admin/dist/index.html)
+[线上地址](https://konglingwen94.github.io/vue-blog-admin/dist)
 
 
 ## Project setup
