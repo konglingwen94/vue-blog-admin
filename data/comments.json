@@ -1,0 +1,12 @@
+[
+    {
+        "content": "content",
+        "id": "id",
+        "createdAt": "2020-1-3",
+        "article": {
+            "title": "title",
+            "isPublished": true,
+            "thumbupCount": 23
+        }
+    }
+]

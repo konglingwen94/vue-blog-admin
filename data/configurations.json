@@ -1,0 +1,37 @@
+[
+    {
+        "kind": "Projectintro",
+        "platform": {
+            "webClient": "webclient",
+            "serverApi": "serverapi",
+            "serverUI": "serverUi"
+        }
+    },
+    {
+        "kind": "Siteconfig",
+        "message": {
+            "renderLayer": 2,
+            "expandLayer": 2
+        },
+        "carousel": {
+            "autoplay": true,
+            "loop": true,
+            "interval": 300,
+            "sort": "pv",
+            "number": 4
+        }
+    },
+    {
+        "kind": "Profile",
+        "personal": {
+            "description": "description",
+            "contact": []
+        },
+        "technology": {
+            "frontend": "frontend",
+            "serverSide": "serverSide"
+        },
+        "wechat": "wechat",
+        "github": "github"
+    }
+]
